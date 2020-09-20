@@ -6,7 +6,7 @@ echo "Your first name is $LEN symbols long."
 echo "What is your last name?"
 read LNAME
 echo "I'll make a directory called ${LNAME}"
-if [ ! -d "$LNAME" ] #checking if a directory named after input LNAME already exists using if
+if [ ! -d "$LNAME" ] #checking if a directory named after input LNAME doesn't exist using if
 then
 mkdir "${LNAME}" #creating LNAME directory
 echo "Would you like to copy passwd to ${LNAME}? Enter yes or no"
