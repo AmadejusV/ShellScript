@@ -14,7 +14,7 @@ read ANSWER  #asking to confirm copying of passwd to LNAME
         if [ $ANSWER = "yes" ]
         then
         echo "Copying passwd file from /etc directory to ${LNAME}"
-        cp /etc/passwd ${LNAME} #copying from etc dic to LNAME
+        cp /etc/passwd ${LNAME} #copying from etc dir to LNAME
         echo "Done"
         else
         echo "Copying refused"
